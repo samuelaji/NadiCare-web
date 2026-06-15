@@ -30,17 +30,17 @@ const Footer = () => {
         </div>
 
         {/* Garis Pembatas Vertikal Tengah */}
-        <div className="hidden md:block w-[1px] bg-white/40 self-stretch mx-6"></div>
+        <div className="hidden md:block w-[1px] bg-white/40 self-stretch mx-40"></div>
 
         {/* Sisi Kanan: Media Sosial dan Logo Instansi */}
-        <div className="flex flex-col items-start md:items-end space-y-6 min-w-[260px]">
+        <div className="flex flex-col items-start md:items-start space-y-6 min-w-[260px]">
           <h4 className="text-lg font-medium tracking-wider">IKUTI KAMI :</h4>
           
           <div className="grid grid-cols-4 gap-3">
-            <a href="#" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.instagram.com/nadicare24?igsh=MXh2c2ZicGtqam85YQ==" className="hover:opacity-80 transition-opacity">
               <img src={instagramLogo} alt="Instagram" className="w-10 h-10 object-contain" />
             </a>
-            <a href="#" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.facebook.com/share/1CcPtnJs5Q/" className="hover:opacity-80 transition-opacity">
               <img src={facebookLogo} alt="Facebook" className="w-10 h-10 object-contain" />
             </a>
             <a href="#" className="hover:opacity-80 transition-opacity">
@@ -60,14 +60,23 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="w-full flex items-center justify-start md:justify-end gap-4 pt-4 border-t border-white/10 md:border-none">
+          <div className="w-full flex items-center justify-start md:justify-start gap-4 pt-4 border-t border-white/10 md:border-none">
             <div className="flex flex-col items-center justify-center text-[11px] font-semibold tracking-wider text-right text-white/90">
-              <span>USD</span>
+              <a 
+                href="https://www.usd.ac.id/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:opacity-80 hover:underline transition-all"
+              >
+                USD
+              </a>
               <span className="mt-2 text-xs font-normal">NadiCare</span>
             </div>
             <div className="w-[1px] h-10 bg-white/40"></div>
             <div className="flex items-center gap-2">
-              <img src={kemenkesLogo} alt="Kementerian Kesehatan RI" className="w-12 h-12 object-contain" />
+              <a href="https://www.kemkes.go.id/id/home" className="hover:opacity-80 transition-opacity">
+                <img src={kemenkesLogo} alt="Kementerian Kesehatan RI" className="w-12 h-12 object-contain" />
+              </a>
             </div>
           </div>
         </div>
