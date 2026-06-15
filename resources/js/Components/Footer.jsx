@@ -1,7 +1,5 @@
 import React from 'react';
 
-// Perbaiki path: dari '../assets/' menjadi '../asset/'
-// Perbaiki nama file: linkln.png (sesuai file yang ada)
 import instagramLogo from '../asset/instagram.png';
 import facebookLogo from '../asset/facebook.png';
 import tiktokLogo from '../asset/tiktok.png';
@@ -13,11 +11,10 @@ import kemenkesLogo from '../asset/Kemenkes.png';
 
 const Footer = () => {
   return (
-    // Background merah full lebar (sesuai perubahan sebelumnya)
     <footer className="bg-[#B63737] text-white w-full py-10 px-0 font-sans select-none">
       <div className="w-full px-6 md:px-16 flex flex-col md:flex-row justify-between items-start md:items-stretch gap-8">
         
-        {/* Sisi Kiri: Informasi Hak Cipta dan Organisasi */}
+        {/* Sisi Kiri */}
         <div className="flex flex-col justify-between flex-1 space-y-6 md:space-y-0">
           <div className="space-y-3 text-sm md:text-base font-light tracking-wide leading-relaxed">
             <p>Hari Donor Darah Sedunia Dibuat Oleh NadiCare</p>
@@ -25,14 +22,22 @@ const Footer = () => {
             <p>Kementrian Kesehatan Republik Indonesia</p>
           </div>
           <div className="text-sm md:text-base font-light pt-4 md:pt-0">
-            <p>@2026</p>
+            {/* PERUBAHAN: @2026 sekarang menjadi link yang bisa diklik */}
+            <a 
+              href="https://drive.google.com/file/d/1lLYaZ4mvwKlrsXr4tB54IuUBqKs-v44C/view?usp=drive_link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 hover:underline transition-all"
+            >
+              @2026
+            </a>
           </div>
         </div>
 
-        {/* Garis Pembatas Vertikal Tengah */}
+        {/* Garis Pembatas Vertikal Tengah - lebih ke tengah dengan mx-16 */}
         <div className="hidden md:block w-[1px] bg-white/40 self-stretch mx-40"></div>
 
-        {/* Sisi Kanan: Media Sosial dan Logo Instansi */}
+        {/* Sisi Kanan - Geser "IKUTI KAMI" ke kiri (md:items-start) */}
         <div className="flex flex-col items-start md:items-start space-y-6 min-w-[260px]">
           <h4 className="text-lg font-medium tracking-wider">IKUTI KAMI :</h4>
           
@@ -70,11 +75,19 @@ const Footer = () => {
               >
                 USD
               </a>
-              <span className="mt-2 text-xs font-normal">NadiCare</span>
+              {/* NadiCare sekarang bisa diklik */}
+              <a 
+                href="https://github.com/samuelaji/NadiCare-web.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mt-2 text-xs font-normal hover:opacity-80 hover:underline transition-all"
+              >
+                NadiCare
+              </a>
             </div>
             <div className="w-[1px] h-10 bg-white/40"></div>
             <div className="flex items-center gap-2">
-              <a href="https://www.kemkes.go.id/id/home" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.kemkes.go.id/id/home" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
                 <img src={kemenkesLogo} alt="Kementerian Kesehatan RI" className="w-12 h-12 object-contain" />
               </a>
             </div>
