@@ -47,7 +47,6 @@ export default function SyaratProses() {
                         </div>
                     </div>
 
-                    {/* PROSES DONOR */}
                     <div>
                         <h3 className="text-2xl font-bold text-[#B63737] mb-8">ALUR PROSES</h3>
                         <div className="flex flex-wrap justify-center md:justify-start gap-6">
@@ -69,14 +68,12 @@ export default function SyaratProses() {
 
                 <div className="border-t-2 border-dashed border-gray-300 my-16"></div>
 
-                {/* SECTION 2: TIM RELAWAN */}
                 <section className="mb-20">
                     <div className="flex items-center gap-4 mb-10 border-b-2 border-gray-200 pb-4">
                         <span className="bg-[#B63737] text-white px-4 py-1 rounded-full text-sm font-bold">02</span>
                         <h2 className="text-3xl font-extrabold text-gray-800">TIM RELAWAN</h2>
                     </div>
 
-                    {/* SYARAT RELAWAN */}
                     <div className="mb-12">
                         <h3 className="text-2xl font-bold text-[#B63737] mb-8">SYARAT GABUNG</h3>
                         <div className="flex flex-wrap justify-center md:justify-start gap-6">
@@ -95,7 +92,6 @@ export default function SyaratProses() {
                         </div>
                     </div>
 
-                    {/* PROSES RELAWAN */}
                     <div>
                         <h3 className="text-2xl font-bold text-[#B63737] mb-8">ALUR PENDAFTARAN</h3>
                         <div className="flex flex-wrap justify-center md:justify-start gap-6">
