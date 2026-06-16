@@ -22,6 +22,10 @@ Route::get('/syarat', function () {
     return Inertia::render('syarat_Proses');
 });
 
+Route::get('/tentang-kami', function () {
+    return Inertia::render('TentangKami');
+});
+
 Route::post('/daftar', [PendaftaranController::class, 'store']);
 
 Route::get('/dashboard', function () {
