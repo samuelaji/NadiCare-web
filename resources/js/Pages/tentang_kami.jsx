@@ -8,10 +8,11 @@ import {Head} from '@inertiajs/react';
 export default function tentang_kami() {
     return (
         <div className="w-full min-h-screen bg-gray-50 text-gray-800 font-poppins">
-          
+          <Navbar />
+            <Head title="Tentang_Kami" />
             
           <header className="w-full min-h-screen bg-gradient-to-b from-[#B93F3F] to-[#531C1C] flex flex-col justify-center items-center text-white text-center px-4">
-            
+
                 <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
                     Menjembatani Kebaikan, <br />
                     Menyelamatkan Nyawa.
@@ -82,6 +83,7 @@ export default function tentang_kami() {
 
                 </div>
             </div>
+                <Footer />
         </div>
     );
 }
