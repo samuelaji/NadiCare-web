@@ -14,7 +14,7 @@ Route::get('/lokasi', function () {
 });
 
 Route::get('/daftar', function () {
-    return Inertia::render('Pendaftaran');
+    return Inertia::render('daftar');
 });
 
 Route::get('/dashboard', function () {
