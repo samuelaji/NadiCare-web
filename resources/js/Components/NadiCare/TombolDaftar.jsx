@@ -1,31 +1,16 @@
 import React from 'react';
+import { Link } from '@inertiajs/react';
 
-const HeartbeatIcon = (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        className="w-7 h-7"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-    >
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-    </svg>
-);
-
-export default function PrimaryButton(props) {
+export default function TombolDaftar({ text, href = "/daftar" }) {
     return (
-
-        <button
-            className="flex items-center justify-center space-x-2.5 bg-red-600 text-white px-3 py-3 rounded-full font-bold shadow-lg hover:bg-red-700 transition duration-300"
+        <Link
+            href={href}
+            className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-5 py-2 rounded-full transition duration-300"
         >
-            {HeartbeatIcon}
-
-            <span className="text-l font-bold">
-                {props.text || "Daftar sekarang"}
-            </span>
-        </button>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            {text}
+        </Link>
     );
 }
