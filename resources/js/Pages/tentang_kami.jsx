@@ -1,7 +1,7 @@
 import React from 'react';
 import {Head} from '@inertiajs/react';
-// import navbar from '../components/navbar';
-// import Footer from '../components/footer';
+import Navbar from '../Components/NadiCare/Navbar';
+import Footer from '../Components/Footer';
 
 
 
