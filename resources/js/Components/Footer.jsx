@@ -1,13 +1,13 @@
 import React from 'react';
 
-import instagramLogo from '../asset/instagram.png';
-import facebookLogo from '../asset/facebook.png';
-import tiktokLogo from '../asset/tiktok.png';
-import xLogo from '../asset/x.png';
-import linkedinLogo from '../asset/linkIn.png';   
-import youtubeLogo from '../asset/youtube.png';
-import whatsappLogo from '../asset/whatsapp.png';
-import kemenkesLogo from '../asset/Kemenkes.png'; 
+import instagramLogo from '../assets/instagram.png';
+import facebookLogo from '../assets/facebook.png';
+import tiktokLogo from '../assets/tiktok.png';
+import xLogo from '../assets/x.png';
+import linkedinLogo from '../assets/linkIn.png';   
+import youtubeLogo from '../assets/youtube.png';
+import whatsappLogo from '../assets/whatsapp.png';
+import kemenkesLogo from '../assets/Kemenkes.png'; 
 
 const Footer = () => {
   return (
