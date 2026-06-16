@@ -20,16 +20,17 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-10 font-sans">
-                        <Link href="/" className="text-sm font-semibold text-gray-700 hover:text-red-600 tracking-wide transition duration-300">
+
+                        <Link href="/" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             BERANDA
                         </Link>
-                        <Link href="/syarat" className="text-sm font-semibold text-gray-700 hover:text-red-600 tracking-wide transition duration-300">
+                        <Link href="/syarat" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             SYARAT & PROSES
                         </Link>
-                        <Link href="/tentang" className="text-sm font-semibold text-gray-700 hover:text-red-600 tracking-wide transition duration-300">
+                        <Link href="/tentang" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             TENTANG KAMI
                         </Link>
-                        <Link href="/kontak" className="text-sm font-semibold text-gray-700 hover:text-red-600 tracking-wide transition duration-300">
+                        <Link href="/kontak" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             KONTAK & RELAWAN
                         </Link>
                     </div>
