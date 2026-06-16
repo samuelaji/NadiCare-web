@@ -8,6 +8,10 @@ use App\Http\Controllers\PendaftaranController;
 
 Route::get('/daftar', function () {
     return Inertia::render('Pendaftaran');
+Route::get('/', function () {
+    return Inertia::render('tes', [
+
+    ]);
 });
 
 Route::post('/daftar', [PendaftaranController::class, 'store']);
