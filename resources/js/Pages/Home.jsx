@@ -16,12 +16,12 @@ const Home = () => {
 
       {/* ===== HERO (Frame 1) ===== */}
       <section className="relative w-full min-h-[100vh] overflow-hidden">
-        {/* Background MERAH dengan clip-path miring */}
+        {/* Background MERAH */}
         <div
           className="absolute inset-0 w-full h-full bg-[#B83D3D]"
           style={{ clipPath: 'polygon(0 0, 80% 0, 60% 100%, 0 100%)' }}
         ></div>
-        
+
         {/* Background PUTIH */}
         <div
           className="absolute inset-0 w-full h-full bg-white"
@@ -42,21 +42,24 @@ const Home = () => {
             </h1>
 
             <p className="font-['Trocchi'] font-normal text-[20px] text-white/90 mt-3 leading-relaxed max-w-2xl">
-              Setiap detik, seseorang membutuhkan transfusi darah. 
-              Mari jadikan diri Anda sebagai pahlawan kemanusiaan hari ini. 
+              Setiap detik, seseorang membutuhkan transfusi darah.
+              Mari jadikan diri Anda sebagai pahlawan kemanusiaan hari ini.
               Donor aman, cepat, dan menyelamatkan nyawa.
             </p>
 
             <div className="flex flex-wrap gap-10 mt-14">
-              <a 
-                href="#" 
+              {/* Tombol Cari Lokasi Donor */}
+              <a
+                href="/lokasi"
                 className="font-['Poppins'] font-bold bg-white text-[#B83D3D] px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition inline-flex items-center gap-2"
               >
                 <img src={iconCariLokasi} alt="Cari Lokasi" className="w-5 h-5 object-contain" />
                 Cari Lokasi Donor
               </a>
+
+              {/* Tombol Pelajari Syarat */}
               <a
-                href="#" 
+                href="#"
                 className="font-['Poppins'] font-bold border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white/10 transition inline-block"
               >
                 Pelajari Syarat
@@ -66,10 +69,10 @@ const Home = () => {
 
           {/* Gambar hero di sisi kanan */}
           <div className="hidden md:block absolute right-0 bottom-0 w-[53%] h-full">
-            <img 
-              src={fotoUtama} 
-              alt="Hero" 
-              className="w-full h-full object-contain object-bottom mix-blend-multiply" 
+            <img
+              src={fotoUtama}
+              alt="Hero"
+              className="w-full h-full object-contain object-bottom mix-blend-multiply"
             />
           </div>
         </div>
@@ -88,8 +91,8 @@ const Home = () => {
                 Donor darah adalah cara nyata untuk menolong sesama, karena satu kantong
                 darah yang Anda donasikan dapat membantu menyelamatkan banyak nyawa.
               </p>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="mt-4 bg-[#B83D3D] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A03030] transition-all shadow-md inline-block"
               >
                 Pelajari Lebih Lanjut →
@@ -106,8 +109,8 @@ const Home = () => {
                 Yuk, bantu kami di balik layar! Mulai dari mengelola event, edukasi warga,
                 hingga bantuan administrasi. Tenaga dan semangatmu sangat kami butuhkan.
               </p>
-              <a 
-                href="#" 
+              <a
+                href="/daftar"
                 className="mt-4 bg-[#B83D3D] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A03030] transition-all shadow-md inline-block"
               >
                 Daftar Relawan →
@@ -124,8 +127,8 @@ const Home = () => {
                 Bantu sebarkan informasi donor darah dan ajak keluarga serta teman untuk
                 berani mendonorkan melalui media sosial.
               </p>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="mt-4 bg-[#B83D3D] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A03030] transition-all shadow-md inline-block"
               >
                 Sebarkan Campaign →
@@ -162,8 +165,8 @@ const Home = () => {
               <img src={iconLokasi} alt="Lokasi" className="w-6 h-6" />
               <span className="text-base font-medium text-gray-800">Lokasi: Seluruh Mitra PMI & Puskesmas</span>
             </div>
-            <a 
-              href="#" 
+            <a
+              href="#"
               className="mt-14 bg-[#B83D3D] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A03030] transition-all shadow-md inline-block"
             >
               Ikuti Event Terdekat →

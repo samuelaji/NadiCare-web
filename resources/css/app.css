@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.donor-darah {
+    text-align: center;
+}
+
+.tim-relawan {
+    text-align: center;
+}

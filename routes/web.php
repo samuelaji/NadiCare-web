@@ -6,7 +6,15 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('Test');
+    return Inertia::render('Home');
+});
+
+Route::get('/lokasi', function () {
+    return Inertia::render('Lokasi');
+});
+
+Route::get('/daftar', function () {
+    return Inertia::render('Pendaftaran');
 });
 
 Route::get('/dashboard', function () {
