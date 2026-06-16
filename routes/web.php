@@ -1,15 +1,30 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PendaftaranController; 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\Controllers\PendaftaranController;
+
+Route::get('/', function () {
+    return Inertia::render('Home');
+});
+
+Route::get('/tentang', function () {
+    return Inertia::render('tentang_kami'); 
+});
+
+Route::get('/lokasi', function () {
+    return Inertia::render('Lokasi');
+});
+
+Route::get('/syarat', function () {
+    return Inertia::render('syarat_Proses'); 
+});
 
 Route::get('/daftar', function () {
     return Inertia::render('Pendaftaran');
 });
-
 Route::post('/daftar', [PendaftaranController::class, 'store']);
 
 Route::get('/dashboard', function () {
