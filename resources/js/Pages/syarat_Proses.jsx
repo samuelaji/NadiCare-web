@@ -1,150 +1,123 @@
 import React from 'react';
 import { Head } from '@inertiajs/react'; 
 
-export default function syarat_Proses() {
+import Navbar from '../Components/NadiCare/Navbar';
+import Footer from '../Components/Footer';
+
+export default function SyaratProses() {
     return (
-        <div className="bg-white-100 min-h-screen">
-          
-            <Head title="Syarat & Proses " /> 
-       
+        <div className="min-h-screen flex flex-col bg-gray-50 font-sans">
+            <Head title="Syarat & Proses" /> 
+            
+            <Navbar />
 
-        {/* DONOR DARAH */}
-        <div className="p-5">
-           <h1 className="text-3xl font-extrabold text-gray-600 font-poppins mt-[60px] ml-5">
-           DONOR DARAH
-           </h1>
-          <div className="donor-darah">
-             <h5 className="text-3xl font-extrabold text-[#B63737] font-poppins">
-             SYARAT
-              </h5>
-         <div className="flex  justify-center gap-4 mt-10">
-           <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-             <img src="/Icon/Usia.png" alt="Gambar 1" className="w-[95px] h-[95px] object-contain mb-3"/>
-             <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Usia</span>
-             <span className="text-base fontRegular text-[#B63737] text-center font-poppins">17-65 tahun</span>
-          </div>
+            <header className="bg-[#B63737] py-16 px-6 text-center text-white">
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Informasi Donor & Relawan</h1>
+                <p className="text-red-100 max-w-2xl mx-auto text-lg">
+                    Pelajari persyaratan dan langkah-langkah untuk menjadi bagian dari pahlawan kemanusiaan NadiCare.
+                </p>
+            </header>
 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Berat Badan.png" alt="Gambar 2" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Aktivitas</span>
-             <span className="text-base fontRegular text-[#B63737] text-center font-poppins">minimal 45 kg</span>
-          </div>
+            <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12">
 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Kesehatan.png" alt="Gambar 3" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Kesehatan</span>
-             <span className="text-base fontRegular text-[#B63737] text-center font-poppins">jasmani & rohani</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Tekanan Darah.png" alt="Gambar 4" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Tekanan Darah</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins"> Normal(120/80 mmHg)</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/obat.png" alt="Gambar 5" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Obat</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">tidak mengonsumsi obat terlarang</span>
-         </div> 
+                <section className="mb-20">
+                    <div className="flex items-center gap-4 mb-10 border-b-2 border-gray-200 pb-4">
+                        <span className="bg-[#B63737] text-white px-4 py-1 rounded-full text-sm font-bold">01</span>
+                        <h2 className="text-3xl font-extrabold text-gray-800">DONOR DARAH</h2>
+                    </div>
+
+                    <div className="mb-12">
+                        <h3 className="text-2xl font-bold text-[#B63737] mb-8 flex items-center gap-2">
+                             SYARAT MUTLAK
+                        </h3>
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6">
+                            {[
+                                { title: "Usia", desc: "17-65 Tahun", img: "/Icon/Usia.png" },
+                                { title: "Berat Badan", desc: "Minimal 45 Kg", img: "/Icon/Berat Badan.png" },
+                                { title: "Kesehatan", desc: "Jasmani & Rohani", img: "/Icon/Kesehatan.png" },
+                                { title: "Tekanan Darah", desc: "120/80 mmHg", img: "/Icon/Tekanan Darah.png" },
+                                { title: "Obat-obatan", desc: "Bebas Narkoba", img: "/Icon/obat.png" },
+                            ].map((item, index) => (
+                                <div key={index} className="w-[180px] md:w-[210px] bg-white rounded-2xl shadow-md border-t-4 border-[#B63737] p-6 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1">
+                                    <img src={item.img} alt={item.title} className="w-20 h-20 object-contain mb-4" />
+                                    <span className="text-sm font-bold text-gray-800 uppercase tracking-wider mb-1">{item.title}</span>
+                                    <span className="text-sm font-normal text-gray-600">{item.desc}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* PROSES DONOR */}
+                    <div>
+                        <h3 className="text-2xl font-bold text-[#B63737] mb-8">ALUR PROSES</h3>
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6">
+                            {[
+                                { title: "Registrasi", desc: "Isi Formulir", img: "/Icon/registrasi.png" },
+                                { title: "Wawancara", desc: "Cek Fisik & HB", img: "/Icon/wawancara.png" },
+                                { title: "Proses Donor", desc: "Pengambilan Darah", img: "/Icon/donor.png" },
+                                { title: "Selesai", desc: "Souvenir & Snack", img: "/Icon/registrasi selesai.png" },
+                            ].map((item, index) => (
+                                <div key={index} className="w-[180px] md:w-[210px] bg-white rounded-2xl shadow-md border-t-4 border-[#B63737] p-6 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1">
+                                    <img src={item.img} alt={item.title} className="w-20 h-20 object-contain mb-4" />
+                                    <span className="text-sm font-bold text-gray-800 uppercase tracking-wider mb-1">{item.title}</span>
+                                    <span className="text-sm font-normal text-gray-600">{item.desc}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                <div className="border-t-2 border-dashed border-gray-300 my-16"></div>
+
+                {/* SECTION 2: TIM RELAWAN */}
+                <section className="mb-20">
+                    <div className="flex items-center gap-4 mb-10 border-b-2 border-gray-200 pb-4">
+                        <span className="bg-[#B63737] text-white px-4 py-1 rounded-full text-sm font-bold">02</span>
+                        <h2 className="text-3xl font-extrabold text-gray-800">TIM RELAWAN</h2>
+                    </div>
+
+                    {/* SYARAT RELAWAN */}
+                    <div className="mb-12">
+                        <h3 className="text-2xl font-bold text-[#B63737] mb-8">SYARAT GABUNG</h3>
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6">
+                            {[
+                                { title: "Usia", desc: "Minimal 18 Tahun", img: "/Icon/Usia.png" },
+                                { title: "Keterampilan", desc: "Komunikasi Baik", img: "/Icon/Komunikasi.png" },
+                                { title: "Jiwa Sosial", desc: "Siap Melayani", img: "/Icon/sosial.png" },
+                                { title: "Pelatihan", desc: "Wajib Orientasi", img: "/Icon/orientasi.png" },
+                            ].map((item, index) => (
+                                <div key={index} className="w-[180px] md:w-[210px] bg-white rounded-2xl shadow-md border-t-4 border-[#B63737] p-6 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1">
+                                    <img src={item.img} alt={item.title} className="w-20 h-20 object-contain mb-4" />
+                                    <span className="text-sm font-bold text-gray-800 uppercase tracking-wider mb-1">{item.title}</span>
+                                    <span className="text-sm font-normal text-gray-600">{item.desc}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* PROSES RELAWAN */}
+                    <div>
+                        <h3 className="text-2xl font-bold text-[#B63737] mb-8">ALUR PENDAFTARAN</h3>
+                        <div className="flex flex-wrap justify-center md:justify-start gap-6">
+                            {[
+                                { title: "Registrasi", desc: "Online/Offline", img: "/Icon/registrasi.png" },
+                                { title: "Wawancara", desc: "Validasi Data", img: "/Icon/wawancara.png" },
+                                { title: "Orientasi", desc: "Pelatihan Dasar", img: "/Icon/orientasi.png" },
+                                { title: "Peta Tugas", desc: "Penempatan Lokasi", img: "/Icon/peta.png" },
+                                { title: "Mentoring", desc: "Bimbingan Senior", img: "/Icon/Mentoring.png" },
+                            ].map((item, index) => (
+                                <div key={index} className="w-[180px] md:w-[210px] bg-white rounded-2xl shadow-md border-t-4 border-[#B63737] p-6 flex flex-col items-center text-center transition-all hover:shadow-xl hover:-translate-y-1">
+                                    <img src={item.img} alt={item.title} className="w-20 h-20 object-contain mb-4" />
+                                    <span className="text-sm font-bold text-gray-800 uppercase tracking-wider mb-1">{item.title}</span>
+                                    <span className="text-sm font-normal text-gray-600">{item.desc}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <Footer />
         </div>
-
-         <h5 className="text-3xl font-extrabold text-[#B63737] font-poppins mt-[60px]">
-            PROSES
-        </h5>
-        <div className="flex  justify-center gap-4 mt-10">
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/registrasi.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Registrasi</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Isi formulir</span>
-         </div> 
-            <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/wawancara.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Wawancara</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Pemeriksaan fisik</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/donor.png" alt="Gambar 7" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Donor</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Proses donor</span>
-         </div> 
-            <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-                <img src="/Icon/registrasi selesai.png" alt="Gambar 8" className="w-[95px] h-[95px] object-contain mb-3"/>
-                <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Registrasi Selesai</span>
-                <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Pemberian souvenir</span>
-        </div>
-        </div>
-    </div>
-
-    <div className="h-[2px] bg-[#363636] mt-[80px] mx-10"></div>
-
-
-    {/* TIM RELAWAN */}
-    <div>   
-         <h1 className="text-3xl font-extrabold text-gray-600 font-poppins mt-[60px] ml-5 ">
-           TIM RELAWAN
-        </h1>
-        <div className="tim-relawan">
-         <h5 className="text-3xl font-extrabold text-[#B63737] font-poppins mt-[60px]">
-            SYARAT
-        </h5>
-         <div className="flex  justify-center gap-4 mt-10">
-            <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Usia.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Usia</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Minimal 18 tahun</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Komunikasi.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Keterampilan</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Komunikasi yang baik</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/sosial.png" alt="Gambar 7" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Sosial</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Siap Melayani Masyarakat</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/orientasi.png" alt="Gambar 8" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Orientasi</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Mengikuti Pelatihan Dasar</span>
-         </div>
-
-        </div>
-         <h5 className="text-3xl font-extrabold text-[#B63737] font-poppins mt-[60px]">
-            PROSES
-        </h5>
-        <div className="flex  justify-center gap-4 mt-10">
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/registrasi.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Registrasi</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Isi formulir</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/wawancara.png" alt="Gambar 6" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Wawancara & Seleksi Awal</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Validasi & tanya jawab</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl flex flex-col items-center justify-center p-4">
-            <img src="/Icon/orientasi.png" alt="Gambar 7" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Orientasi</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Pelatihan Dasar Relawan</span>
-         </div> 
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl  flex flex-col items-center justify-center p-4">
-            <img src="/Icon/peta.png" alt="Gambar 8" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Peta</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Pengenalan Lokasi & Tugas</span>
-         </div>
-          <div className="w-[200px] h-[200px] shrink-0 bg-[#D9D9D9] rounded-lg shadow-xl  flex flex-col items-center justify-center p-4">
-            <img src="/Icon/Mentoring.png" alt="Gambar 8" className="w-[95px] h-[95px] object-contain mb-3"/>
-            <span className="text-base font-extrabold text-[#B63737] text-center font-poppins">Mentoring</span>
-            <span className="text-base fontRegular text-[#B63737] text-center font-poppins">Bimbingan & Dukungan</span>
-         </div>
-        </div>
-        </div>
-       
-    </div>
-
-    </div>
-
-    </div>
     );
 }
