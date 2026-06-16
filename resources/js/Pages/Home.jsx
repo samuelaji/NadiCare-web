@@ -138,8 +138,10 @@ const Home = () => {
           </div>
 
           <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Hari Donor Darah Sedunia</h2>
-            <p className="text-base md:text-lg font-light mb-6 opacity-90">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#B83D3D]">
+        Hari Donor Darah Sedunia
+      </h2>
+            <p className="text-base md:text-3xl font-light mb-6 opacity-90">
               Setiap tanggal 14 Juni, seluruh dunia memperingati Hari Donor Darah.
               Ini adalah pengingat bahwa kebutuhan akan darah yang aman tidak pernah
               berhenti. Mari ambil bagian, jadikan momen ini sebagai langkah nyata
@@ -147,11 +149,11 @@ const Home = () => {
             </p>
             <div className="flex items-center gap-3 mb-3">
               <img src={iconKalender} alt="Kalender" className="w-6 h-6" />
-              <span className="text-base font-medium">Tanggal: 14 Juni 2026</span>
+              <span className="text-base md:text-2xl font-medium">Tanggal: 14 Juni 2026</span>
             </div>
             <div className="flex items-center gap-3 mb-6">
               <img src={iconLokasi} alt="Lokasi" className="w-6 h-6" />
-              <span className="text-base font-medium">Lokasi: Seluruh Mitra PMI & Puskesmas</span>
+              <span className="text-base md:text-2xl font-medium">Lokasi: Seluruh Mitra PMI & Puskesmas</span>
             </div>
             <a 
               href="#" 
