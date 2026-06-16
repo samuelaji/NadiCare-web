@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
+import Navbar from '../Components/NadiCare/Navbar';
+import TombolDaftar from '../Components/NadiCare/TombolDaftar';
 
 export default function Beranda() {
     return (
