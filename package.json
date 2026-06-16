@@ -22,11 +22,8 @@
         "vite": "^8.0.0"
     },
     "dependencies": {
-<<<<<<< HEAD
         "leaflet": "^1.9.4",
-        "react-leaflet": "^5.0.0"
-=======
+        "react-leaflet": "^5.0.0",
         "react-icons": "^5.6.0"
->>>>>>> 28013feece1e2f5e58d3117f27433b62170591cf
     }
 }
