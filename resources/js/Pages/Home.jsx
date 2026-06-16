@@ -65,9 +65,9 @@ const Home = () => {
                     Cari Lokasi Donor
                   </a>
 
-                  {/* Tombol Pelajari Syarat */}
+                  {/* Tombol Pelajari Syarat - mengarah ke /syarat */}
                   <a
-                    href="#"
+                    href="/syarat"
                     className="font-['Poppins'] font-bold border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-white/10 transition inline-block"
                   >
                     Pelajari Syarat
