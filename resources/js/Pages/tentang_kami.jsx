@@ -7,16 +7,16 @@ import {Head} from '@inertiajs/react';
 
 export default function tentang_kami() {
     return (
-        <div className="tentang-kami-min-h-screen bg-gray-50 text-gray-800 font-poppins">
+        <div className="w-full min-h-screen bg-gray-50 text-gray-800 font-poppins">
           
             
-            <header className="text-white py-20 text-center px-1 bg-gradient-to-b from-[#B93F3F] to-[#531C1C]">
-               
-                <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
+          <header className="w-full min-h-screen bg-gradient-to-b from-[#B93F3F] to-[#531C1C] flex flex-col justify-center items-center text-white text-center px-4">
+            
+                <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl mx-auto">
                     Menjembatani Kebaikan, <br />
                     Menyelamatkan Nyawa.
                 </h1>
-                <p className="text-gray-200 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+               <p className="text-gray-200 text-[18px] md:text-[22px] max-w-2xl mx-auto leading-relaxed">
                     NadiCare didirikan dengan satu tujuan sederhana: memastikan tidak ada pasien yang kehilangan nyawa hanya karena kekurangan pasokan darah disaat kritis.
                 </p>
             </header>
