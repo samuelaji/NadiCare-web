@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PendaftaranController;
 
 Route::get('/', function () {
     return Inertia::render('Home');
@@ -14,8 +15,10 @@ Route::get('/lokasi', function () {
 });
 
 Route::get('/daftar', function () {
-    return Inertia::render('daftar');
+    return Inertia::render('Pendaftaran');
 });
+
+Route::post('/daftar', [PendaftaranController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
