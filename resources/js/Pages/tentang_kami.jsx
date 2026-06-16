@@ -34,10 +34,12 @@ export default function tentang_kami() {
                         Membangun Ekosistem Donor <br className="hidden md:inline" />  yang Transparan & Modern
                     </h2>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                        Kami percaya kepedulian sosial harus didukung oleh teknologi yang memudahkan. NadiCare bukan sekedar platform informasi, melainkan komunikasi yang menghubungkan orang sehat dengan mereka yang berjuang di ranjang rumah sakit.
+                        Kami percaya kepedulian sosial harus didukung oleh teknologi yang memudahkan. NadiCare bukan sekedar 
+                        platform informasi, melainkan komunikasi yang menghubungkan orang sehat dengan mereka yang berjuang di ranjang rumah sakit.
                     </p>
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                        Melalui sistem manajemen relawan dan kemitraan dengan Palang Merah Indonesia, serta sebagai rumah sakit daerah, kami memastikan setiap tetes darah anda sampai ke tujuan dengan aman.
+                        Melalui sistem manajemen relawan dan kemitraan dengan Palang Merah Indonesia, serta sebagai rumah sakit daerah, 
+                        kami memastikan setiap tetes darah anda sampai ke tujuan dengan aman.
                     </p>
                 </div>
 
