@@ -100,7 +100,7 @@ const Home = () => {
                     darah yang Anda donasikan dapat membantu menyelamatkan banyak nyawa.
                   </p>
                   <a
-                    href="#"
+                    href="/tentang-kami"
                     className="mt-4 bg-[#B83D3D] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A03030] transition-all shadow-md inline-block"
                   >
                     Pelajari Lebih Lanjut →
