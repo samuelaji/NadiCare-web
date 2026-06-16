@@ -30,7 +30,7 @@ export default function Navbar() {
                         <Link href="/tentang" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             TENTANG KAMI
                         </Link>
-                        <Link href="/kontak" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
+                        <Link href="/daftar" className="text-sm font-semibold text-gray-700 hover:text-[#B63737] tracking-wide transition duration-300">
                             KONTAK & RELAWAN
                         </Link>
                     </div>

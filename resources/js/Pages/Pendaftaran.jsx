@@ -36,7 +36,7 @@ export default function Pendaftaran() {
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
                             <div className="bg-white rounded-full p-3 mt-1">
-                                {/* Warna SVG disamakan */}
+
                                 <svg className="h-5 w-5 text-[#B63737]" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                                 </svg>
@@ -71,7 +71,6 @@ export default function Pendaftaran() {
                     </div>
                 </div>
 
-                {/* KOLOM KANAN - FORM */}
                 <div className="w-3/5 bg-white p-12 flex flex-col justify-center">
                     <h2 className="text-4xl font-bold text-gray-800 mb-3">Formulir Registrasi</h2>
                     <p className="text-base text-gray-500 mb-10">Isi data di bawah ini dan tim kami akan segera menghubungi Anda.</p>
