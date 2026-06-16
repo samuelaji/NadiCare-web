@@ -23,7 +23,7 @@ Route::get('/syarat', function () {
 });
 
 Route::get('/tentang-kami', function () {
-    return Inertia::render('TentangKami');
+    return Inertia::render('tentang_kami');
 });
 
 Route::post('/daftar', [PendaftaranController::class, 'store']);
