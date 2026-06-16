@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('syarat_Proses');
+    return Inertia::render('Lokasi');
 });
 
 Route::get('/dashboard', function () {
