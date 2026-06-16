@@ -15,9 +15,9 @@ export default function Lokasi() {
         </div>
         
     <div className="w-full px-6 mb-6">
-                <div className="max-w-7xl mx-auto bg-gray-200 rounded-lg p-8 shadow-sm text-center">
-                    <div className="h-[450px] w-full rounded-lg overflow-hidden shadow-md bg-white flex items-center justify-center">
-                        
+              
+                  <div className="h-[600px] w-full rounded-lg overflow-hidden shadow-md bg-white flex items-center justify-center">
+                          
                         <iframe 
                             title="Google Maps Lokasi Pusat"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9744634208477!2d110.3762412!3d-7.7925927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5786b51bf12f%3A0xc3cb7cf500858e72!2sYogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
@@ -29,7 +29,7 @@ export default function Lokasi() {
                         ></iframe>
 
                     </div>
-                </div>
+              
             </div>
       
 <div class="w-full px-6 mt-[60px]">
