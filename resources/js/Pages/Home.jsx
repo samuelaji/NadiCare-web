@@ -1,5 +1,5 @@
 import React from 'react';
-import { Head, Link } from '@inertiajs/react'; 
+import { Head, Link } from '@inertiajs/react';
 
 import Navbar from '../Components/NadiCare/Navbar';
 import Footer from '../Components/Footer';
@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans select-none bg-gray-50">
       <Head title="Beranda" />
-      
+
       <Navbar />
 
       <main className="flex-1 flex flex-col">
@@ -152,7 +152,7 @@ export default function Home() {
                 berhenti. Mari ambil bagian, jadikan momen ini sebagai langkah nyata
                 kepedulian Anda.
               </p>
-              
+
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="bg-red-50 p-3 rounded-lg">
